@@ -1,0 +1,14 @@
+{
+  "name": "princemall",
+  "version": "2.0.0",
+  "description": "PrinceMall: multi-vendor marketplace with buyer storefront, seller portal and admin panel (Node.js, no dependencies)",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

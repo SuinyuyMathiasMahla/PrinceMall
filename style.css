@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(237, 234, 234);
+    padding: 10px;
+    border: none;
+}
+
+.card{
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(237, 234, 234);
+    font-size: 25px;
+    margin: 15px;
+    height: 280px;
+}
+
+label{
+    margin: 0px;
+}
+
+.name-item{
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.description{
+    font-weight: 20;
+    font-size: 10px;
+}
+img{
+    width: 195px; 
+    height: 160px;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.btn-see{
+    margin-left: 17px;
+    background-color: rgb(99, 81, 48);
+    color: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(192, 194, 176);
+    padding: 6px;
+    border: none;
+}
+
+.btn-add{
+    background-color: rgb(125, 210, 125);
+    color: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgb(237, 234, 234);
+    padding: 6px;
+    border: none;
+}
+
+.operation{
+    justify-content: center;
+}
+
+.btn{
+    align-items: right;
+    top: -20px;
+    margin-left: 70%;
+    padding: 0px;
+}

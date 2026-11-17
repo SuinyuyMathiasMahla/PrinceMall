@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PrinceMall</title>
+        <style>
+            body { font-family: sans-serif; margin: 0; padding: 60px 20px; text-align: center; background-color: #f7f6f3; color: #1c1c1c; }
+            code { background-color: white; border: 1px solid #ddd; border-radius: 3px; padding: 3px 8px; }
+            a { color: rgb(99, 81, 48); font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <!--
+            This file is only a signpost. The real home page is public/index.html
+            (styled by public/style.css) and it must be opened through the server,
+            because the products, cart and login come from the Node.js backend.
+        -->
+        <h1>PrinceMall</h1>
+        <p id="message">Opening the shop... If nothing happens, go to <a href="http://localhost:3000/">http://localhost:3000/</a>.</p>
+        <script>
+            var shop = 'http://localhost:3000/';
+            fetch(shop + 'api/categories', { mode: 'no-cors' })
+                .then(function () { location.replace(shop); })
+                .catch(function () {
+                    document.getElementById('message').innerHTML =
+                        'The shop server is not running. Open a terminal in this folder, run ' +
+                        '<code>node server.js</code>, then open <a href="' + shop + '">' + shop + '</a>.';
+                });
+        </script>
+    </body>
+</html>

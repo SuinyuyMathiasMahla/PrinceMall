@@ -1,0 +1,7 @@
+node_modules/
+# Runtime data: accounts, password hashes, sessions, orders, demo credentials
+data/*.json
+data/*.tmp
+data/credentials.txt
+# Images uploaded by sellers and buyers
+public/uploads/
